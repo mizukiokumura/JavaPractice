@@ -42,6 +42,7 @@ public class Practice2 {
     // y = Integer.parseInt(br.readLine());
     // System.out.println( (x + y) / 2);
     // 練習問題 2-6
+
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     int x;
     System.out.println("年齢を入力してください");
