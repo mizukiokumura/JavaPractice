@@ -98,5 +98,65 @@ public class Practice4 {
     // }
 
     // System.out.println( "最大値=" + max_value );
+    // 練習問題4-9;
+    // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    // int max = 0;
+    // int min = 20;
+    // System.out.println("整数を10回入力してください");
+    // for(int i = 0; i < 10; i++) {
+    //   int num = Integer.parseInt(br.readLine());
+    //   if (max < num) {
+    //     max = num;
+    //   } 
+    //   if (min > num) {
+    //     min = num;
+    //   }
+    // }
+    // System.out.println("最大値は" + max + "です");
+    // System.out.println("最小値は" + min + "です");
+    // 練習問題 4-10;
+    // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    // System.out.println("個数を入力してください");
+    // int number = Integer.parseInt(br.readLine());
+
+    // for(int i = 0; i < number ; i++ ) {
+    //   System.out.print("*");
+    // }
+    // 練習問題4-11;
+    // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    // int num = Integer.parseInt(br.readLine());
+    // int count = 0;
+    // for(int i = 0; i < num; i++ ) {
+    //   System.out.print(count);
+    //   count++;
+    //   if (count > 9 ) {
+    //     count = 0;
+    //   }
+    // }
+    // 練習問題 4-12
+    // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    // int num = 0 ;
+    // int total = 0;
+    // while (total < 100) {
+    //   System.out.println("数値を入力してください");
+    //   num = Integer.parseInt(br.readLine());
+    //   total += num;
+    // }
+    // System.out.println("合計は" + total + "です");
+    // 練習問題 4-13;
+    // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    // int sCount = 0;
+    // int bCount = 0;
+
+    // while ( (sCount < 3) && (bCount < 4)) {
+    //   System.out.println("ストライクだった場合は1をボールだった場合は2を入力してください");
+    //   int count = Integer.parseInt(br.readLine());
+    //   if (count == 1 ) {
+    //     System.out.println(sCount++);
+    //   } else {
+    //     System.out.println(bCount++);
+    //   }
+    // }
+    // System.out.println(bCount + "ボール," + sCount + "ストライク");
   }
 }
