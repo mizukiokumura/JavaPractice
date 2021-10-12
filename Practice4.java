@@ -158,5 +158,67 @@ public class Practice4 {
     //   }
     // }
     // System.out.println(bCount + "ボール," + sCount + "ストライク");
+    // 練習問題 4-14
+    // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    // int sCount = 0;
+    // int bCount = 0;
+
+    // while (sCount < 3 && bCount < 4) {
+    //   System.out.println("今のカウントは何でしたか？入力してください。1:ストライク,2:ボール,3:ファウル");
+    //   int count = Integer.parseInt(br.readLine());
+    //   if (count == 1) {
+    //     sCount++;
+    //   }else if(count == 3) {
+    //     if (sCount <= 1) {
+    //       sCount++;
+    //     }
+    //   } else {
+    //     bCount++;
+    //   }
+    // }
+    // System.out.println(bCount + "ボール," + sCount + "ストライク");
+    // 練習問題4-15
+      // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+      // int num = 0;
+      // System.out.println("整数を入力してください");
+      // num = Integer.parseInt(br.readLine());
+      // if(num % 7 != 0) {
+      //   System.out.println("その数字は素数です");
+
+      // } else {
+      //   System.out.println("その数字は素数ではありません");
+      // }
+      //  BufferedReader br = new BufferedReader(
+      //                    new InputStreamReader( System.in ) );
+      // int value = Integer.parseInt( br.readLine() );
+      // int n;
+
+      // for( n = 2 ; n <= ( value / 2 ) ; n++ ){ value割る２で入力された値を割ってループ回数を決めている
+      //     if( ( value % n ) == 0 ) 
+      //         break;
+      // }
+
+      // if( n > ( value / 2 ) )
+      //     System.out.println( value + "は素数です" );
+      // else
+      //     System.out.println( value + "は素数ではありません" );
+      // 練習問題 4-16
+    // BufferedReader br = new BufferedReader(
+    //                         new InputStreamReader( System.in ) );
+    // int n = Integer.parseInt( br.readLine() );
+
+    // for( int x = 2 ; n > 1 ; x++ ){
+    //     while( ( n % x ) == 0 ){
+    //         System.out.print( x + " " );
+    //         n /= x;
+    //     }
+    // }
+    // 練習問題 4-17
+    // for(int i = 1; i <= 9; i++){
+    //   for(int u = 1; u <= 9; u++) {
+    //     int x = i * u ;
+    //     System.out.printf("%2d", x);
+    //   }
+    // }
   }
 }
