@@ -220,5 +220,61 @@ public class Practice4 {
     //     System.out.printf("%2d", x);
     //   }
     // }
+    // 練習問題 4-18
+      // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+      // int total = 0;
+      // while (true) {
+      //   System.out.println("数値を入力してください");
+      //   int num = Integer.parseInt(br.readLine());
+      //   if (num == 0) {
+      //     break;
+      //   }
+      //   total += num;
+
+      // }
+      // System.out.println("合計値は" + total + "です");
+    // 練習問題 4-19
+    // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    // int avg = 0;
+    // int count = 0;
+    // while(true) {
+    //   System.out.println("数値を入力してください");
+    //   int num = Integer.parseInt(br.readLine());
+    //   if (num == 0) {
+    //     break;
+    //   }
+    //   avg += num;
+    //   count++;
+
+    // }
+    // System.out.println("平均値は" + (avg / count) + "です");
+    // 練習問題 4-20
+    // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    // System.out.println("数値を入力してください");
+    // int sizeNum = Integer.parseInt(br.readLine());
+
+    //   for(int i = 0; i < sizeNum; i++) {
+    //     for(int u = 0; u < i + 1; u++) {
+    //       System.out.print("$");
+    //     }
+    //     System.out.println(" ");
+    //   }
+    // 練習問題 4-21
+    // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    // int size = Integer.parseInt(br.readLine());
+    // for(int i = 0; i < size; i++) {
+    //   for(int j = 0; j < size ; j++) {
+    //     if(i == j || (size - i - 1) == j) {
+    //       /*ここの一週目はまずi = 0かつj= 0 なのでtrueになりxが表示される。
+    //       そしてjif文の2週目はi = 0でj = 1になり最初の条件がfalseになるそして次の条件が変数sizeをiif分のiで引いてさらに-1した数値がjif文のjと同じ数値だった場合(例 sizeの中身が4だった場合 (4 - 0 - 1ここは3になる) == 1)の条件も
+    //       falseなのでelse文に飛んで空白を入力する。
+    //       そしてjif文の3週目はi = 0でj = 2なので最初の条件がまたfalseになり、そして次の条件size - i - 1 == j((4 - i - 1) == 2)は３なのでさらに空白になるといった感じで進んでいく。 */
+    //       System.out.print("X");
+    //     } else {
+    //       System.out.print(" ");
+    //     }
+    //   }
+    //   System.out.println("");
+    // }
   }
 }
