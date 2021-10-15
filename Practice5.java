@@ -58,5 +58,61 @@ public class Practice5 {
     // for( int n : values )
     //     if( ( n % 2 ) != 0 )
     //         System.out.print( n + " " );
+    // 練習問題 5-4
+    // BufferedReader br = new BufferedReader(
+    //                         new InputStreamReader( System.in ) );
+    // int     values[] = new int[10];
+    // int     cnt, sum;
+
+    // for( cnt = 0, sum = 0 ; cnt < 10 && sum <= 100 ; cnt++ )
+    // {
+    //     values[cnt] = Integer.parseInt( br.readLine() );
+    //     sum += values[cnt];
+    // }
+
+    // for( int i = 0 ; i < cnt ; i ++ )
+    //     System.out.print( "\n" + values[i] );
+    // 練習問題 5-5
+    // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    // int value = Integer.parseInt(br.readLine());
+    // int binary[] = new int[16];
+    // for(int i = 15; i >= 0; i--, value /= 2) {
+    //   binary[i] = value % 2;
+    // }
+
+    // for(int i = 0; i < 16; i++ ) {
+    //   System.out.println(binary[i]);
+    // }
+    // 練習問題 5-6
+    // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    // int kuku[][] = new int[9][9];
+
+    // for(int i = 0; i < 9; i++) {
+    //   for(int u = 0; u < 9; u++) {
+    //     kuku[i][u] = (i + 1) * (u + 1);
+    //   }
+    // }
+
+    // for(int i = 0; i < 9; i++) {
+    //   for(int j = 0; j < 9; j++) {
+    //     System.out.printf("%2d",kuku[i][j]);
+        
+    //   }
+    //   System.out.println();
+    // }
+    // 練習問題 5-7
+    // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    // int kuku[][] = new int[9][9];
+    // int x = 0;
+    // int n = 0;
+    // for(int i = 0; i < 9; i++) {
+    //   for(int u = 0; u < 9; u++) {
+    //     kuku[i][u] = (i + 1) * (u+ 1);
+    //   }
+    // }
+    // System.out.println("1桁の数値を2回入力してください");
+    // x = Integer.parseInt(br.readLine());
+    // n = Integer.parseInt(br.readLine());
+    // System.out.println(kuku[x-1][n-1]);
   }
 }
