@@ -1,4 +1,6 @@
 import java.io.*;
+import java.util.Arrays;
+import java.util.Collections;
 public class Practice5 {
   public static void main(String[] args) throws IOException{
     // 練習問題 5-1
@@ -114,5 +116,36 @@ public class Practice5 {
     // x = Integer.parseInt(br.readLine());
     // n = Integer.parseInt(br.readLine());
     // System.out.println(kuku[x-1][n-1]);
+    // 練習問題 5-8
+    // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    // Integer[] array = new Integer[10];
+    // for(int i = 0; i < 10; i++) {
+    //   System.out.println("整数を入力してください");
+    //   array[i] = Integer.parseInt(br.readLine());
+    // }
+    // Arrays.sort(array);
+    // System.out.println(Arrays.toString(array));
+    
+    // BufferedReader br = new BufferedReader(
+    //                     new InputStreamReader( System.in ) );
+    // int values[] = new int[10];
+
+    // for( int i = 0 ; i < 10 ; i++ )
+    //     values[i] = Integer.parseInt( br.readLine() );
+
+    // for( int i = 0 ; i < 10 ; i++ )
+    // {
+    //     for( int j = i + 1 ; j < 10 ; j++ )
+    //     {
+    //         if( values[i] > values[j] ){ ここで0番目の配列と、一番目の配列を比較して、0番目の方が大きかった場合
+    //             int t = values[i]; ここで0番目の配列を変数tに入れて一旦保存し
+    //             values[i] = values[j]; ここで0番目に小さい方の配列(1番目)を入れて、
+    //             values[j] = t; そしてここで、1番目の配列に大きいかった0番目の配列を入れている。
+    //         }
+    //     }
+    // }
+
+    // for( int i = 0 ; i < 10 ; i++ )
+    //     System.out.print( values[i] + " " );
   }
 }
