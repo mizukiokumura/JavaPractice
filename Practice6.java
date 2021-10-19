@@ -37,6 +37,16 @@ public class Practice6 {
     // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     // int x = Integer.parseInt(br.readLine());
     // kuKu(x);
+    // 練習問題 6 - 7
+    // for(int n = 10000; n < 10100; n++) {
+    //   if(IsPrimeNumber(n)) {
+    //     System.out.print(n + "");
+    //   }
+    // 練習問題 6-8
+    // for(int n = 11; n <= 20; n++) {
+    //   System.out.print(Fibonacci(n) + " ");
+    // }
+    
   }
   // 練習問題 6-1
   // public static int zizyou(int num) {
@@ -106,4 +116,27 @@ public class Practice6 {
   //     System.out.println(u);
   //   }
   // }
+  // 練習問題 6-7
+  // static boolean IsPrimeNumber(int num) {
+  //   if(num <= 3) {
+  //     return true;
+  //   } 
+  //   for(int i = 2; i <= (num / 2); i++) {
+  //     if((num % i) == 0) {
+  //       return false;
+  //     }
+  //   }
+  //   return true;
+  // }
+  // 練習問題 6-8
+  // static int Fibonacci(int n) {
+  //   if(n == 0){
+  //     return 0;
+  //   } else if (n == 1){
+  //     return 1;
+  //   } else {
+  //     return Fibonacci(n - 2) + Fibonacci(n - 1);
+  //   }
+  // }
+
 }
