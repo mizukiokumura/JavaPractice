@@ -27,11 +27,21 @@ public class Practice8 {
     //   System.out.println(tokuten + tenSuu.get(tokuten));
     // }
 
-    Map<String, ArrayList<String>> map = new HashMap<>();
+    // Map<String, ArrayList<String>> map = new HashMap<>();
     
-    ArrayList<String> sands = new ArrayList<>();
-    ArrayList<String> drinks = new ArrayList<>();
-    ArrayList<String> sides = new ArrayList<>();
+    // ArrayList<String> sands = new ArrayList<>();
+    // ArrayList<String> drinks = new ArrayList<>();
+    // ArrayList<String> sides = new ArrayList<>();
+
+    MenuManager manager = new MenuManager();
+
+    manager.showMenu("sandwitch");
+    manager.setMenu("sandwitch","ビックバーガー");
+    manager.showMenu("sandwitch");
+    manager.searchMenu("ホットミルク");
+    manager.searchMenu("オレンジジュース");
+
+    
 
   }
 }
