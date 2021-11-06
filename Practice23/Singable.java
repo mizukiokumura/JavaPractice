@@ -1,0 +1,3 @@
+interface Singable {
+  void sing();
+}
