@@ -1,0 +1,3 @@
+class TroubleException extends Exception {
+  
+}
