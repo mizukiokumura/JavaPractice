@@ -173,6 +173,40 @@ public class Practice27 {
     // }
     // System.out.printf("\n");
 
+    // 問題 1-10;
 
+    // int level = 5;
+    // for(int i = 0;i < level; i++ ) {
+    //   for(int u = 0; u < 1; u++) {
+    //     switch(i){
+    //       case 0:
+    //         System.out.println("　　　　■");
+    //         break;
+    //       case 1:
+    //         System.out.println("　　　■ ■ ■");
+    //         break;
+    //       case 2:
+    //         System.out.println("　　■ ■ ■ ■ ■");
+    //         break;
+    //       case 3:
+    //         System.out.println("　■ ■ ■ ■ ■ ■ ■");
+    //         break;
+    //       case 4:
+    //         System.out.println("■ ■ ■ ■ ■ ■ ■ ■ ■");
+    //         break;
+    //     } 
+    //   }
+    // }
+    
+    // 問題 1-11;
+
+    // int x = 1;
+
+    // while(x < 1000){
+    //   if(x >= 500){
+    //     break;
+    //   }
+    //   System.out.println(x *= 2);
+    // }
   }
 }
