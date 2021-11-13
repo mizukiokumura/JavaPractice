@@ -208,5 +208,160 @@ public class Practice27 {
     //   }
     //   System.out.println(x *= 2);
     // }
+
+    // 問題 1-12
+
+    // display("テスト", 5);
+
+    // 問題 1-13
+
+    // int a = 18;
+    // int b = 6;
+
+    // System.out.println("足し算:" + calc(a, b, 0));
+    // System.out.println("引き算:" + calc(a, b, 1));
+    // System.out.println("掛け算:" + calc(a, b, 2));
+    // System.out.println("割り算:" + calc(a, b, 3));
+
+    // 問題 1-14;
+    // int x = 96;
+    // int y = 88;
+    // int z = 79;
+
+    // System.out.println("整数" + x + "、" + y + "、" + z + "の中で最小の値は");
+    // System.out.println(min(x,y,z) + "です");
+
+    // 問題 1-15;
+    // int[] arr;
+    //  arr = new int[3];
+
+    // arr[0] = 25;
+    // arr[1] = 39;
+    // arr[2] = 43;
+
+    // for(int i = 0; i < arr.length; i++) {
+    //   System.out.println((i + 1) + "番目の値は" + arr[i] + "です");
+    // }
+
+    // 問題 1-16;
+
+    // int[] arr = {1,2,3,4,5,6,7};
+    // System.out.println("配列の合計値:" + sum(arr));
+
+    // 問題 1-17;
+
+    // int[] arr = {43, 2, 765, 234, 908, 115, 32, 476, 938, 65, 93, 47, 102, 735, 529, 1010, 639, 660, 182, 908};
+
+    // System.out.println("配列の最大値:" + max(arr));
+
+    // 問題 1-18;
+
+    // int[] arr = {13,90,10,79,101, 25, 123, 38, 5, 16, 64, 55, 17};
+    // int[] arr2 = {38, 118, 26, 17, 41, 53, 10,88, 92, 102, 67, 22, 55};
+
+    // System.out.println("共通する数値の個数:" + common(arr, arr2) );
+
+    // 問題 1-19;
+
+    int[][] arr = {{11,22,33},{44},{55,66}, {77,88,99}};
+
+    for(int i = 0; i < arr.length; i++) {
+      for(int u = 0; u < arr[i].length; u++) {
+        System.out.print(arr[i][u]);
+      }
+    }
+
+    System.out.println();
+
+
+
+    for(int i = arr.length - 1; i >= 0; i--) {
+      int n = 0;
+      int m = 0;
+      for(int u = 0; u < arr[i].length - 1; u++ ) {
+        arr[m][n] = arr[i][u];
+        System.out.print(arr[m][n]);
+        n++;
+      }
+      m++;
+    }
   }
+
+  // 問題1-12;
+
+  // public static void display(String st, int num) {
+  //   for(int i = 0; i < num; i++) {
+  //     System.out.println(st);
+  //   }
+  // }
+
+  // 問題 1-13;
+
+  // public static int calc(int a, int b, int c) {
+  //   switch(c) {
+  //     case 0:
+  //       return a + b;
+  //     case 1:
+  //       return a - b;
+  //     case 2:
+  //       return a * b;
+  //     case 3:
+  //       return a / b;
+  //     default:
+  //       return 0;
+  //   }
+  // }
+  
+  // 問題 1-14;
+  // public static int min(int x, int y, int z) {
+  //   if(x > y) {
+  //     if(y > z) {
+  //       return z;
+  //     } else {
+  //       return y;
+  //     }
+  //   } else {
+  //     if(x > z) {
+  //       return z;
+  //     } else {
+  //       return x;
+  //     }
+  //   }
+  // }
+
+  // 問題 1-16;
+
+  // public static int sum(int[] arr) {
+  //   int total = 0;
+  //   for(int a : arr) {
+  //     total += a;
+  //   }
+  //   return total;
+  // }
+  
+  // 問題 1-17;
+
+  // public static int max(int[] arr) {
+  //   int max = 0;
+  //   for(int i = 0; i < arr.length; i++) {
+  //     if(arr[i] > max) {
+  //       max = arr[i];
+  //     }
+  //   }
+  //   return max;
+  // }
+
+  // 問題 1-18;
+
+  // public static int common(int[] arr, int[] arr2) {
+  //   int count = 0;
+  //   for(int i = 0; i < arr.length; i++) {
+  //     for(int u = 0; u < arr2.length; u++) {
+  //       if(arr[i] == arr2[u]) {
+  //         count++;
+  //       }
+  //     }
+  //   }
+  //   return count;
+  // }
 }
