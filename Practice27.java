@@ -1,4 +1,8 @@
 public class Practice27 {
+  // 問題 1-22;
+  // private static final String PASSWORD = "XYZ";
+
+
   public static void main(String[] args) {
     // 問題1-1
     // int mPrice;
@@ -263,28 +267,211 @@ public class Practice27 {
 
     // 問題 1-19;
 
-    int[][] arr = {{11,22,33},{44},{55,66}, {77,88,99}};
+    // int[][] arr = {{11,22,33},{44},{55,66}, {77,88,99}};
 
-    for(int i = 0; i < arr.length; i++) {
-      for(int u = 0; u < arr[i].length; u++) {
-        System.out.print(arr[i][u]);
-      }
-    }
+    // for(int i = 0; i < arr.length; i++) {
+    //   for(int u = 0; u < arr[i].length; u++) {
+    //     System.out.print(arr[i][u]);
+    //   }
+    // }
 
-    System.out.println();
+    // System.out.println();
 
 
 
-    for(int i = arr.length - 1; i >= 0; i--) {
-      int n = 0;
-      int m = 0;
-      for(int u = 0; u < arr[i].length - 1; u++ ) {
-        arr[m][n] = arr[i][u];
-        System.out.print(arr[m][n]);
-        n++;
-      }
-      m++;
-    }
+    // for(int i = arr.length - 1; i >= 0; i--) {
+    //   for(int n = arr[i].length - 1; n >= 0; n--) {
+    //     System.out.print(arr[i][n]);
+    //   }
+
+    // 問題 1-20;
+
+    // int[][] arr = { {1,5,8}, {2,4,7},{1,9,3,5}, {4,2}, {6,1,9,4}, {7,3,8,1},{8,4,3,9,7}};
+
+    // int target = 1;
+
+    // System.out.println(target + "の個数" + count(arr, target));
+
+    // target = 7;
+
+    // System.out.println(target + "の個数" + count(arr, target));
+
+    // 問題 1-21;
+
+    // int[] points = {
+    //         69, 40, 88, 68, 13, 62, 45, 43, 28, 69,
+    //         54, 77, 81, 34, 41, 78, 59, 21, 45, 64,
+    //         55, 18, 63, 80, 64, 26, 52, 44, 61, 50,
+    //         44, 82, 56, 74, 67, 98, 58, 84, 77, 70,
+    //         60, 77, 64, 89, 59, 74, 21, 66, 85, 68,
+    //         90, 48, 64, 80, 63, 47, 70, 79, 51, 66,
+    //         23, 84, 57, 57, 76, 60, 100, 66, 79, 61,
+    //         47, 66, 76, 45, 90, 69, 72, 51, 86, 64,
+    //         57, 51, 42, 60, 71, 69, 7, 62, 77, 61,
+    //         43, 50, 68, 30, 78, 58, 40, 62, 70, 22
+    //       };
+    
+    
+    // double avg = 0;
+    // double total = 0;
+    // for(int point : points) {
+    //   total += point;
+    // }
+    // avg = total / points.length;
+
+    // System.out.println("平均点" + avg);
+
+
+    // System.out.println("ヒストグラム");
+   
+    // int count = 0;
+    // String countChar = "";
+    // for(int point : points ) {
+    //   if( point >= 0 && point < 10) {
+    //     count++;
+    //   }
+    //   for(int i = 0; i < count; i++) {
+    //     countChar += "*";
+    //   }
+    //   count = 0;
+    // }
+    // System.out.println(" 0点台" + countChar);
+    // countChar = "";
+    // for(int point : points ) {
+    //   if( point >= 10 && point < 20) {
+    //     count++;
+    //   }
+    //   for(int i = 0; i < count; i++) {
+    //     countChar += "*";
+    //   }
+    //   count = 0;
+    // }
+    // System.out.println("10点台" + countChar);
+    // countChar = "";
+    // for(int point : points ) {
+    //   if( point >= 20 && point < 30) {
+    //     count++;
+    //   }
+    //   for(int i = 0; i < count; i++) {
+    //     countChar += "*";
+    //   }
+    //   count = 0;
+    // }
+    // System.out.println("20点台" + countChar);
+    // countChar = "";
+    // for(int point : points ) {
+    //   if( point >= 30 && point < 40) {
+    //     count++;
+    //   }
+    //   for(int i = 0; i < count; i++) {
+    //     countChar += "*";
+    //   }
+    //   count = 0;
+    // }
+    // System.out.println("30点台" + countChar);
+    // countChar = "";
+    // for(int point : points ) {
+    //   if( point >= 40 && point < 50) {
+    //     count++;
+    //   }
+    //   for(int i = 0; i < count; i++) {
+    //     countChar += "*";
+    //   }
+    //   count = 0;
+    // }
+    // System.out.println("40点台" + countChar);
+    // countChar = "";
+    // for(int point : points ) {
+    //   if( point >= 50 && point < 60) {
+    //     count++;
+    //   }
+    //   for(int i = 0; i < count; i++) {
+    //     countChar += "*";
+    //   }
+    //   count = 0;
+    // }
+    // System.out.println("50点台" + countChar);
+    // countChar = "";
+    // for(int point : points ) {
+    //   if( point >= 60 && point < 70) {
+    //     count++;
+    //   }
+    //   for(int i = 0; i < count; i++) {
+    //     countChar += "*";
+    //   }
+    //   count = 0;
+    // }
+    // System.out.println("60点台" + countChar);
+    // countChar = "";
+    // for(int point : points ) {
+    //   if( point >= 70 && point < 80) {
+    //     count++;
+    //   }
+    //   for(int i = 0; i < count; i++) {
+    //     countChar += "*";
+    //   }
+    //   count = 0;
+    // }
+    // System.out.println("70点台" + countChar);
+    // countChar = "";
+    // for(int point : points ) {
+    //   if( point >= 80 && point < 90) {
+    //     count++;
+    //   }
+    //   for(int i = 0; i < count; i++) {
+    //     countChar += "*";
+    //   }
+    //   count = 0;
+    // }
+    // System.out.println("80点台" + countChar);
+    // countChar = "";
+    // for(int point : points ) {
+    //   if( point >= 90 && point < 100) {
+    //     count++;
+    //   }
+    //   for(int i = 0; i < count; i++) {
+    //     countChar += "*";
+    //   }
+    //   count = 0;
+    // }
+    // System.out.println("90点台" + countChar);
+
+    // 問題 1-22;
+
+    // System.out.println("パスワードを入力してください");
+    // String inputPassword = System.console().readLine();
+
+    // if(inputPassword.equals(PASSWORD)) {
+    //   System.out.println("パスワードが一致しました");
+    // } else {
+    //   System.out.println("パスワードが一致しません");
+    // }
+    
+    // 問題 1-23;
+
+    // String[][] apartment = {
+    //             {"後藤", "矢口", "石川", "吉澤", "藤本"},
+    //             {"亀井", "小川", "紺野"},
+    //             {"石川", "安部", "安田", "後藤"},
+    //             {"石黒", "福田", "後藤"}
+    //           };
+
+    // System.out.println("検索する名前を入力してください");
+
+    // String name = System.console().readLine();
+    // int count = 1;
+    // for(int i = 0; i < apartment.length; i++) {
+
+    //   for(int u = 0; u < apartment[i].length; u++) {
+    //     if(apartment[i][u].equals(name)) {
+    //       System.out.println(count + "人目の" + name + "さんは" + (i + 1) + "階の" + (u + 1) + "号室に住んでいます" );
+    //       count++;
+    //     }
+    //   }
+    // }
+    // if(count < 2) {
+    //   System.out.println(name + "さんはこのアパートには住んでいません");
+    // } 
   }
 
   // 問題1-12;
@@ -358,6 +545,20 @@ public class Practice27 {
   //   for(int i = 0; i < arr.length; i++) {
   //     for(int u = 0; u < arr2.length; u++) {
   //       if(arr[i] == arr2[u]) {
+  //         count++;
+  //       }
+  //     }
+  //   }
+  //   return count;
+  // }
+
+  // 問題 1 - 20;
+
+  // public static int count(int[][] ary, int target) {
+  //   int count = 0;
+  //   for(int i = 0; i < ary.length; i++) {
+  //     for(int n = ary[i].length - 1; n >= 0; n--) {
+  //       if(ary[i][n] == target) {
   //         count++;
   //       }
   //     }
