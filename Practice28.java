@@ -151,5 +151,137 @@ public class Practice28 {
     //   }
     //   System.out.println();
     // }
-   }
+    
+    // プログラム作成問題 12
+
+    //   int n = Integer.parseInt(br.readLine());
+
+    //   for(int i = 0; i < n ; i++ ) {
+    //     for(int u = 0; u <= i; u++) {
+    //       System.out.print("●");
+    //     }
+    //     System.out.println();
+    //   }
+    //   int n = 4;
+    //       for (int i = 1; i <= n; i++) {
+    //           dispCircle(i, n);
+    //           System.out.println();
+    //       }
+    //   }
+
+    //   static void dispCircle(int i, int n) {
+    //       for (int j = n; j >= 1; j--) {
+    //           if (i < j) {
+    //               System.out.print("　");
+    //           } else {
+    //               System.out.print("●");
+    //           }
+    //       }
+
+    // プログラム作成問題 13
+
+    // int a,b,c;
+    // a = Integer.parseInt(br.readLine());
+    // b = Integer.parseInt(br.readLine());
+    // c = Integer.parseInt(br.readLine());
+
+    // if (a > b && a > c) {
+    //   System.out.println("最大値はaです");
+    // } else if( b > a && b > c) {
+    //   System.out.println("最大値はbです");
+    // } else {
+    //   System.out.println("最大値はcです");
+    // }
+
+    // プログラム作成問題 14
+
+    // int n = Integer.parseInt(br.readLine());
+    // int count = 0;
+    // StringBuilder sb = new StringBuilder();
+
+    // for(int i = 1; i <= n; i++) {
+    //   count += i;
+    //   sb.append(i);
+    //   if( i == n ) {
+    //     sb.append("=");
+    //     sb.append(count);
+    //   } else {
+    //     sb.append("+");
+    //   }
+    // }
+    // String max = sb.toString();
+
+    // System.out.println(max);
+
+    // // 回答例
+    // int n = 10;
+ 
+    //     StringBuilder formula = new StringBuilder();
+    //     int sum = 0;
+ 
+    //     for (int i = 1; i <= n; i++) {
+    //         sum += i;
+    //         formula.append(i);
+    //         if (i != n) {
+    //             formula.append(" + ");
+    //         }
+    //     }
+    //     formula.append(" = ");
+    //     System.out.println(formula.toString() + sum);
+
+    // プログラム作成問題 15
+    // int[] arr = { 1, 4, 9, 16 };
+    // for (int num : arr) {
+    //     if (num % 2 == 0) {
+    //         System.out.println(num + "は偶数です。");
+    //     } else {
+    //         System.out.println(num + "は奇数です。");
+    //     }
+    // }
+
+    // プログラム作成問題 16
+
+    // int[] nums = {5, 6, 1, 23, 45, 3, 21, 80, 64};
+    // StringBuilder sb = new StringBuilder();
+    // int nl = nums.length;
+    // int total = 0;
+    // for(int i = 0; i < nl; i++) {
+    //   total += nums[i];
+    //   sb.append(nums[i]);
+
+    //   if(nl == i + 1) {
+    //     sb.append("=");
+    //   } else {
+    //     sb.append("+");
+    //   }
+    // }
+    // System.out.println(sb.toString() + total );
+
+    // プログラム作成問題 17
+
+    // int[] sums = {4,8, 10, 25, 31, 26, 44, 2};
+    // int min = sums[0];
+    // int max = sums[0];
+
+    // for(int sum : sums) {
+    //   if( sum < min) {
+    //     min = sum;
+    //   } else if( sum > max) {
+    //     max = sum;
+    //   }
+    // }
+    // System.out.println("最小値" + min);
+    // System.out.println("最大値" + max);
+    // // 回答例
+    // int[] arr = { 1, 4, 9, 16 };
+    //     int max = 0;
+    //     int min = arr[0];
+    //     for (int num : arr) {
+    //         max = Math.max(max, num);
+    //         min = Math.min(min, num);
+    //     }
+    //     System.out.println("最大は" + max + "、最小は" + min + "です。");
+  }
+
+
 }
