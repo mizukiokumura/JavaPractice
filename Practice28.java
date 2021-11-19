@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.Scanner;
 public class Practice28 {
   public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -281,6 +282,65 @@ public class Practice28 {
     //         min = Math.min(min, num);
     //     }
     //     System.out.println("最大は" + max + "、最小は" + min + "です。");
+
+    // プログラム作成問題 18
+    // String name = br.readLine();
+    // StringBuilder sb = new StringBuilder(name);
+    // name = sb.reverse().toString();
+    // System.out.println(name);
+
+    // String str = "あいうえお";
+
+    //   int maxIndex = str.length() - 1;
+    //   for(int i = maxIndex; i >= 0; i--) {
+    //       System.out.print(str.charAt(i));
+    //       // charAt()はある特定の文字列から、引数で指定した数の文字を取得することができる。例 str.charAt(2)
+    //   }
+
+    // プログラム作成問題 19
+
+    
+    // Scanner sc = new Scanner(System.in);
+    // String str = sc.nextLine();
+    // int count = str.length();
+    // if( count > 10) {
+    //   while( count > 10) {
+    //     System.out.println("１０文字を超えています再度入力してください");
+    //     str = sc.nextLine();
+    //     count = str.length();
+    //   }
+    // } 
+    // System.out.println(str.length());
+    // Scanner sc = new Scanner(System.in);
+ 
+    //     int strLength;
+    //     System.out.println("文字数を判定します。");
+    //     do {
+    //         System.out.println("10文字までしか入力できません");
+    //     } while ((strLength = sc.next().length()) > 10);
+ 
+    //     System.out.println(strLength + "文字です");
+
+    // プログラム作成問題 20
+
+    // int[] array = {30, 25, 43, 53, 64, 53, 23, 35};
+    // int total = 0;
+    // for(int i = 0; i < array.length; i++) {
+    //   total += array[i];
+    // }
+
+    // System.out.println((total / array.length));
+  
+    // // 回答例
+    // public static void main(String[] args) {
+    //     int[] arr = { 1, 4, 9, 16 };
+    //     int sum = 0;
+    //     for (int i = 0; i < arr.length; i++) {
+    //         sum += arr[i];
+    //     }
+    //     double avg = (double) sum / arr.length;
+    //     System.out.println("平均は" + avg + "です。");
+
   }
 
 
