@@ -341,7 +341,98 @@ public class Practice28 {
     //     double avg = (double) sum / arr.length;
     //     System.out.println("平均は" + avg + "です。");
 
+    // プログラム作成問題 21
+
+    // int[][] nums = {{19, 20, 43}, { 34, 53, 72}, {65, 74, 54}, {45, 53, 90, 56, 68}};
+    // int total = 0;
+
+    // for(int i = 0; i < nums.length; i++) {
+    //   for(int u = 0; u < nums[i].length; u++) {
+    //     total += nums[i][u];
+    //   }
+    //   System.out.println( i + "番目の配列の平均は" + (total / nums[i].length) + "です");
+    //   total = 0;
+    // }
+
+    // // 修正コード
+    // int[][] array = {{19, 20, 43}, { 34, 53, 72}, {65, 74, 54}, {45, 53, 90, 56, 68}};
+    // int tol = 0;
+    // int leng = 0;
+    // for(int n = 0; n < array.length; n++) {
+    //   for(int j = 0; j < array[n].length; j++) {
+    //     tol += array[n][j];
+    //   }
+    //   leng += array[n].length;
+    // }
+
+    // double average = (double) tol / leng;
+    // System.out.println("平均は" + average + "です");
+
+    // // 回答例
+    // int[][] arr = { { 0, 1, 9, 10 }, { 4, 6, 8, 10 } };
+    // int sum = 0;
+    // int len = 0;
+    // for (int i = 0; i < arr.length; i++) {
+    //   for (int j = 0; j < arr[i].length; j++) {
+    //     sum += arr[i][j];
+    //   }
+    //   len += arr[i].length;
+    // }
+    // double avg = (double) sum / len;
+    // System.out.println("平均は" + avg + "です。");
+
+    // プログラム作成問題 22
+
+    // int[][] nums = {{72, 42, 53, 40}, {84, 98, 97}, {43, 23, 15, 56, 63}};
+
+    // for(int i = 0; i < nums.length; i++) {
+    //   for(int n = 0; n < nums[i].length; n++) {
+    //     if(nums[i][n] % 2 == 0) {
+    //       System.out.println(nums[i][n] + "は偶数です");
+    //     } else {
+    //       System.out.println(nums[i][n] + "は奇数です");
+    //     }
+    //   }
+    // }
+
+    // プログラム作成問題 23
+
+    // int[][] array = {{53, 23, 43, 54}, {54, 66, 78, 89}, {31, 11, 10, 98}, {45, 43, 26, 80}};
+    // int min = array[0][0];
+    // int max = 0;
+    // for(int i = 0; i < array.length; i++) {
+    //   System.out.print(i + "番目の配列の中身は");
+    //   for(int n = 0; n < array[i].length; n++ ) {
+    //      System.out.print(array[i][n]);
+    //      if(n != array[i].length - 1) {
+    //         System.out.print(",");
+    //       } else {
+    //         System.out.print("");
+    //       }
+    //     if(array[i][n] < min) {
+    //       min = array[i][n];
+    //     } else if(array[i][n] > max) {
+    //       max = array[i][n];
+    //     }
+    //   }
+    //   System.out.println();
+    // }
+
+    // System.out.println("最小値は" + min + "です");
+    // System.out.println("最大値は" + max + "です");
+
+    // // 回答例
+    // int[][] arr = { { 0, 1, 9, 10 }, { 4, 6, 8, 10 } };
+    // int max = Integer.MIN_VALUE;
+    // int min = Integer.MAX_VALUE;
+    // for (int[] row : arr) {
+    //   for (int num : row) {
+    //     max = Math.max(max, num);
+    //     min = Math.min(min, num);
+    //   }
+    // }
+    // System.out.println("最大は" + max + "、最小は" + min + "です。");
+    
+
   }
-
-
 }
