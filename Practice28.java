@@ -433,6 +433,87 @@ public class Practice28 {
     // }
     // System.out.println("最大は" + max + "、最小は" + min + "です。");
     
+    // プログラム作成問題 24
 
+    // String str = br.readLine();
+    // String str2 = br.readLine();
+
+    // if(str.equals(str2)) {
+    //   System.out.println("同じ文字列です");
+    // } else {
+    //   System.out.println("違う文字列です");
+    // }
+
+    // プログラム作成問題 25
+
+    // String yesRoop = "yes";
+    // Scanner sc = new Scanner(System.in);
+    // while(yesRoop.equals("yes")) {
+    //   System.out.println("yesかnoを入力してください");
+    //   yesRoop = sc.nextLine();
+    // }
+
+    // // 回答例
+    // Scanner sc = new Scanner(System.in);
+ 
+    // do {
+    //   System.out.print("もう一度実行する場合はyesと入力してください : ");
+    // } while("yes".equals(sc.next())); // リテラルからメソッドを呼び出すと原理的にNullPointerExceptionが発生しなくなる。
+    // do - while文から始めるという方法の方が理にかなっているなと思った、変数に入れない方がいい時もあるんだなと思ったし、初期化もしないでそのまま記述してしまう方法もあるんだなと思った。
+
+    // プログラム作成問題 26
+    // String searchStr;
+    // String str;
+    // int strNum;
+
+    // Scanner sc = new Scanner(System.in);
+
+    // System.out.println("文字列を入力してください");
+    // str = sc.next();
+    // System.out.println("検索したい文字を入力してください");
+    // searchStr = sc.next();
+    // strNum = str.indexOf(searchStr);
+    // if( strNum == -1 ) {
+    //   System.out.println(strNum);
+    // } else {
+    //   System.out.println(strNum);
+    // }
+
+    // // 回答例 
+    // String str = "abcabc";
+    // char seachChar = 'c';
+    // int result = -1; // やっぱりこのように、変数を複数の用途に使うように考えていく必要があるなと思った。
+    // for(int i = 0; i < str.length(); i++) { // ここの条件は変数strの文字列の個数文ループしてねと書いてある。
+    //   if(str.charAt(i) == seachChar) { // ここのif文は変数strの文字一つ一つをcharAtメソッドで、変数searchCharの文字と合っているか照合している。
+    //       result = i; // そして合っていた場合に、そのインデックス(この場合文字の添字)を変数resultに入れてbreakでループを終わらせている。
+    //       break;
+    //   }
+    // }
+    // System.out.println(result);
+
+    // String str = "abcabc";
+    // char seachChar = 'c';
+
+    // System.out.println(str.indexOf(seachChar));
+
+    // プログラム作成問題 27
+
+    // String str = "abc,123,あいう";
+
+    // System.out.println(str.replace(",","")); // replaceAllだと全ての第一引数の文字を第二引数の文字に変換してくれる。
+
+    // // 回答例
+
+    // String sentence = "abc,123,あいう";
+    // String result = "";
+
+    // for(int i = 0; i < sentence.length(); i++) { // ここも通例通り、変数sentenceの文字列の個数でループを回す。
+    //   if(sentence.charAt(i) != ',') { // ここでも通例通り変数sentenceをcharAtメソッドの引数にループ変数を使用し、一つづつ判定対象の”,”じゃないか調査している。
+    //     result += sentence.charAt(i); // ","じゃない文字だけを変数resultに入れて行くループを繰り返す。","だけが入らないようになっている。
+    //   }
+    // }
+    // System.out.println(result);
+
+    
   }
 }
