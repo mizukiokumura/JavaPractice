@@ -93,6 +93,93 @@ class Practice29 {
     //             System.out.println(str);
     //         }
     //     }
+
+    // プログラム作成問題 35
+
+    // String[] arrayList = { "abcde", "dsbd", "okad", "nums", "ddsa", "mumuq", null}; // nullでlengthメソッドを使ってしまうとエラーになる。
+    // for(int i = 0; i < arrayList.length; i++) {
+    //   if(arrayList[i] != null) {
+    //     for(int n = 0; n < arrayList[i].length(); n++) {
+    //       if(arrayList[i].charAt(n) == 'a') {
+    //         System.out.println(arrayList[i]);
+    //       }
+    //     }
+    //   }
+    // }
+
+    // 回答例
+
+    // String fruits[] = { "banana", "apple", "acerola", null, "grape" };
+ 
+    //     for (String fruit : fruits) {
+    //         if (fruit == null) {
+    //             continue;
+    //         }
+    //         if (fruit.charAt(0) == 'a') {
+    //             System.out.println(fruit);
+    //         }
+    //     }
+
+    // プログラム作成問題 36
+
+    // int num = 1234;
+    // int len = String.valueOf(num).length();
+    // int d = (int)Math.pow(10, len - 1);
+    // for(int i = 1; i <= len; i++) {
+    //   if(num / d == 3) {
+    //     System.out.println(num);
+    //   }
+    //   num %= d;
+    //   d /= 10;
+    // }
+
+    // 回答例
+
+    // int num = 321;
+    // int temp = num;
+    // String result = "3は含まれていません";
+
+    // while(temp > 0) {
+    //   if(temp % 10 == 3) {
+    //     result = "3が含まれています";
+    //     break;
+    //   }
+    //   temp /= 10;
+    // }
+    // System.out.println(result);
+
+    // プログラム作成問題 37
+
+    // int num = 123;
+
+    // int one = num % 10;
+    // int ten = one % 10;
+    // int hyaku = ten % 10;
+    // if(one == ten || ten == hyaku || one == hyaku) {
+    //   System.out.println("同じ数字は含まれています");
+    // } else {
+    //   System.out.println("同じ数字は含まれていません");
+    // }
+
+    // // 回答例
+
+    // int num = 121;
+    // String strNum = String.valueOf(num);
+
+    // String result = "同じ数字は含まれていません";
+
+    // outerFor: for (int i1 = 0; i1 < strNum.length() - 1; i1++) {
+    //     for (int i2 = 1; i2 < strNum.length(); i2++) {
+    //         if (i1 == i2) {
+    //             continue;
+    //         }
+    //         if (strNum.charAt(i1) == strNum.charAt(i2)) {
+    //             result = "同じ数字が含まれています";
+    //             break outerFor;
+    //         }
+    //     }
+    // }
+    // System.out.println(result);
   }
 
   // プログラム作成問題 28
