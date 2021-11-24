@@ -175,11 +175,58 @@ class Practice29 {
     //         }
     //         if (strNum.charAt(i1) == strNum.charAt(i2)) {
     //             result = "同じ数字が含まれています";
-    //             break outerFor;
+    //             break outerFor; // これはラベル付きのbreak文と呼ばれるもので、break ラベル名;と記述することで、ラベル名(任意)の処理を停止させることができる。この場合だと、親のfor文に書かれているので、親の処理を停止させることができる。
     //         }
     //     }
     // }
     // System.out.println(result);
+
+    // プログラム作成問題 38
+
+    // char[] chars = { 'a','p','p','l','e'};
+    // char s = 'p';
+    // int n = 0;
+    // System.out.println("検索文字:" + s);
+
+    // for(int i = 1; i <= chars.length; i++) {
+    //   if(chars[i] == s) {
+    //     n = 1;
+    //     break;
+    //   } else {
+    //     n = -1;
+    //   }
+    // }
+    // System.out.println("表示結果:" + n);
+
+    // プログラム作成問題 39
+
+    // char[] chars = {'a','p','p','l','e'};
+    // char n = 'p';
+    // int u = -1;
+    // for(int i = 1; i <= chars.length - 1; i++) {
+    //   if(chars[i] == n) {
+    //     u = i;
+    //   } 
+    // }
+    // System.out.println(u);
+
+    // // 回答例
+    // char chars[] = { 'a', 'p', 'p', 'l', 'e' };
+ 
+    // char key = 'p';
+    // int index = -1;
+
+    // for(int i = chars.length - 1; i >= 0; i--) { // 逆からfor文を回しているというところがなるほどなと思った。
+    //   if(chars[i] == key) {
+    //     index = i;
+    //     break;
+    //   }
+    // }
+
+    // System.out.println(index);
+
+    
+
   }
 
   // プログラム作成問題 28
