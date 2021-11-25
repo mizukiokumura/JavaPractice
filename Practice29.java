@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.*;
 
 class Practice29 {
   public static void main(String[] args) {
@@ -225,7 +226,98 @@ class Practice29 {
 
     // System.out.println(index);
 
+    // プログラム作成問題 40
+    // Scanner sc = new Scanner(System.in);
+    // char[] chars = { 'a', 'p', 'p', 'l', 'e'};
+    // int count = 0;
+    // char search = sc.next().charAt(0);
+
+    // for(int i = 1; i <= chars.length - 1 ; i++) {
+    //   if(chars[i] == search) {
+    //     count++;
+    //   }
+    // }
+    // System.out.println("検索文字:" + count);
+
+    // プログラム作成問題 41
+
+    // char[] chars = {'a', 'p', 'p', 'l', 'e'} ;// { 'o', 'r', 'a', 'n', 'g', 'e'} ;
+    // int charNum = chars.length - 1;
+    // int num = 0;
+    // for(int i = 0; i < charNum; i++) {
+    //   int count = 0;
+    //   for(int u = 0; u < charNum; u++) {
+    //     if(chars[i] == chars[u]) {
+    //       count++;
+    //       if(count >= 2) {
+    //         num = count;
+    //       }
+    //     }
+    //   }
+    // }
+    // if(num >= 2) {
+    //   System.out.println("要素が重複しています");
+    // } else {
+    //   System.out.println("要素が重複していません");
+    // }
+
+    // 回答例
+    // char[] chars = { 'a', 'p', 'p', 'l', 'e' };
+    // boolean isDuplicated = false; // boolean型で判定することで、条件式を省略できる。
+
+    // for(int i1 = 0; i1 < chars.length - 1; i1++) {
+    //     for(int i2 = i1 + 1; i2 < chars.length; i2++) { // i1に対して+1をする事で、i1の次の要素からか判定がしていける。
+    //       if(chars[i1] == chars[i2]) {
+    //         isDuplicated = true; 
+    //         break; // このbreak文はもう重複が確定した段階でそれ以上回す必要ないよねという意味だと思われる
+    //       }
+    //     }
+    //   if(isDuplicated) { // 上のif文以外にboolean型の判定を変えるものがないのにどうしてもう一度書かれているのか。
+    //     break; 
+    //   }
+    // }
+
+    // if(isDuplicated) {
+    //     System.out.println("要素が重複しています");
+    // } else {
+    //     System.out.println("要素が重複していません");
+    // }
     
+
+    // プログラム作成問題 42
+
+    // double d = 3.14;
+    // int num = (int)d;
+
+    // System.out.println(num);
+
+    // 回答例
+
+    // double d = 12.34;
+ 
+    // String str = "" + d;
+
+    // for(int i = 0; i < str.length(); i++) {
+    //   if(str.charAt(i) == '.') { // ここの条件式で'.'に到達した場合にbreakして周回を終わらせている。
+    //     break;
+    //   }
+    //   System.out.print(str.charAt(i)); // 周回が終わるまで、charAtで文字になった数値を表示し続ける。
+    // }
+
+    // プログラム作成問題 43;
+    
+    // char n = 'あ';
+
+    // int nn = (int)n + 1;
+    // char nnn = (char)nn;
+    // System.out.println(nnn);
+
+    // // 回答例
+
+    // char c = 'a';
+ 
+    // System.out.println((char)(c + 1));
+
 
   }
 
